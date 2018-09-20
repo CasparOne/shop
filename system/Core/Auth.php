@@ -2,6 +2,7 @@
 
 namespace Dalt\Core;
 
+use Common\Models\User;
 use Dalt\Interfaces\IdentityInterface;
 
 class Auth implements IdentityInterface
@@ -38,17 +39,19 @@ class Auth implements IdentityInterface
      * @param string $password
      * @return boolean
      */
-    public function auth($login, $password)
+    public function auth($login, $password) :bool
     {
         $userObj = $this->user::where('login', $login)
                 ->where('status', $this->user::STATUS_ACTIVE)
                 ->first();
-        if (password_verify($password, $userObj->password)) {        
-            $_SESSION["login"] = $login;
-            return true;
-        } else {
-            return false;
+
+        if ($userObj instanceof Model) {
+            if (password_verify($password, $userObj->password)) {
+                $_SESSION["login"] = $login;
+                return true;
+            }
         }
+        return false;
     }
 
     /**

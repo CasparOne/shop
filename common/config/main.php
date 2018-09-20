@@ -5,14 +5,14 @@ return [
         'development' => [
             'host' => 'localhost',
             'username' => 'root',
-            'password' => 'asjD843Kmlf',
-            'dbname' => 'test',
+            'password' => '',
+            'dbname' => 'mysql_shop_db',
         ],
         'production' => [
             'host' => 'localhost',
             'username' => 'root',
             'password' => '',
-            'dbname' => 'test',
+            'dbname' => 'mysql_shop_db',
         ],        
     ], 
 ];

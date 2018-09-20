@@ -2,7 +2,7 @@
 
 return [
     'name' => 'Frontend',    
-    'siteName' => 'Dalt Framework',
+    'siteName' => 'Mega Shop',
     'version' => '1.0.0',
     'basePath' => dirname(__DIR__),
     'backendUrl' => 'http://backend.work.local',
