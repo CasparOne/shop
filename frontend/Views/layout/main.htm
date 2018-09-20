@@ -38,6 +38,7 @@ use Dalt\Core\Auth;
                 <div class="header">
                     <div class="navbar-collapse collapse">
                     <ul class="nav nav-pills pull-right restricted-area">
+                        <li><a href="/news">Last news</a></li>
                         <li><a href="/about">About</a></li>
                         <li><a href="/contact" id="contact">Contact</a></li>  
                         <?php if (Auth::isAuth()) { ?>
@@ -47,7 +48,7 @@ use Dalt\Core\Auth;
                                 </a>
                         </li>
                         <?php } else { ?>
-                        <li><a href="/registration" id="contact">Registration</a></li>  
+                        <li><a href="/registration" id="contact1">Registration</a></li>
                         <li>
                                 <a href="/login/" id="login"><span class="glyphicon glyphicon-log-out"></span> Login</a>
                         </li>
