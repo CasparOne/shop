@@ -1,3 +1,7 @@
 .idea/
+/nbproject
 /vendor
+/data/cache
+/data/logs
+tests/_output/*
 *test*
