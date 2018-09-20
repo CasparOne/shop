@@ -1,0 +1,13 @@
+{
+    "require": {
+        "psr/log": "~1.0",
+        "illuminate/database": "5.7.*",
+        "symfony/yaml": "4.1.*"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
